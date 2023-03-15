@@ -112,7 +112,8 @@ var solidity = require('@ethersproject/solidity');
 var _SUSHI_ADDRESS, _USDC_ADDRESS, _BUSD_ADDRESS, _WETH9_ADDRESS, _WNATIVE_ADDRESS, _DAI_ADDRESS, _USDT_ADDRESS, _MIM_ADDRESS, _FRAX_ADDRESS, _FACTORY_ADDRESS, _ROUTER_ADDRESS, _MASTERCHEF_ADDRESS, _BAR_ADDRESS, _MAKER_ADDRESS, _TIMELOCK_ADDRESS, _BENTOBOX_ADDRESS, _KASHI_ADDRESS, _SUSHISWAP_SWAPPER_AD, _SUSHISWAP_MULTISWAPP, _SUSHISWAP_MULTI_EXAC, _CHAINLINK_ORACLE_ADD, _BORING_HELPER_ADDRES, _MINICHEF_ADDRESS, _MASTERCHEF_V2_ADDRES, _ENS_REGISTRAR_ADDRES, _ZAPPER_ADDRESS, _MERKLE_DISTRIBUTOR_A, _MULTICALL2_ADDRESS, _BALANCE_FETCHER_ADDR, _MULTISIG_ADDRESS;
 var SUSHI_ADDRESS = (_SUSHI_ADDRESS = {}, _SUSHI_ADDRESS[exports.ChainId.ETHEREUM] = '0x6B3595068778DD592e39A122f4f5a5cF09C90fE2', _SUSHI_ADDRESS[exports.ChainId.ROPSTEN] = '0x0769fd68dFb93167989C6f7254cd0D766Fb2841F', _SUSHI_ADDRESS[exports.ChainId.RINKEBY] = '0x0769fd68dFb93167989C6f7254cd0D766Fb2841F', _SUSHI_ADDRESS[exports.ChainId.GÖRLI] = '0x0769fd68dFb93167989C6f7254cd0D766Fb2841F', _SUSHI_ADDRESS[exports.ChainId.KOVAN] = '0x0769fd68dFb93167989C6f7254cd0D766Fb2841F', _SUSHI_ADDRESS[exports.ChainId.FANTOM] = '0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC', _SUSHI_ADDRESS[exports.ChainId.MATIC] = '0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a', _SUSHI_ADDRESS[exports.ChainId.XDAI] = '0x2995D1317DcD4f0aB89f4AE60F3f020A4F17C7CE', _SUSHI_ADDRESS[exports.ChainId.BSC] = '0x947950BcC74888a40Ffa2593C5798F11Fc9124C4', _SUSHI_ADDRESS[exports.ChainId.ARBITRUM] = '0xd4d42F0b6DEF4CE0383636770eF773390d85c61A', _SUSHI_ADDRESS[exports.ChainId.AVALANCHE] = '0x37B608519F91f70F2EeB0e5Ed9AF4061722e4F76', _SUSHI_ADDRESS[exports.ChainId.HECO] = '0x52E00B2dA5Bd7940fFe26B609A42F957f31118D5', _SUSHI_ADDRESS[exports.ChainId.HARMONY] = '0xBEC775Cb42AbFa4288dE81F387a9b1A3c4Bc552A', _SUSHI_ADDRESS[exports.ChainId.OKEX] = '0x2218E0D5E0173769F5b4939a3aE423f7e5E4EAB7', _SUSHI_ADDRESS[exports.ChainId.OKEX_TESTNET] = '', _SUSHI_ADDRESS[exports.ChainId.PALM] = '', _SUSHI_ADDRESS[exports.ChainId.PALM_TESTNET] = '', _SUSHI_ADDRESS[exports.ChainId.MOONRIVER] = '0xf390830DF829cf22c53c8840554B98eafC5dCBc2', _SUSHI_ADDRESS[exports.ChainId.CELO] = '0x29dFce9c22003A4999930382Fd00f9Fd6133Acd1', _SUSHI_ADDRESS[exports.ChainId.TELOS] = '0x922D641a426DcFFaeF11680e5358F34d97d112E1', _SUSHI_ADDRESS[exports.ChainId.FUSE] = '0x90708b20ccC1eb95a4FA7C8b18Fd2C22a0Ff9E78', _SUSHI_ADDRESS[exports.ChainId.MOONBEAM] = '0x2C78f1b70Ccf63CDEe49F9233e9fAa99D43AA07e', _SUSHI_ADDRESS[exports.ChainId.KAVA] = '0x7C598c96D02398d89FbCb9d41Eab3DF0C16F227D', _SUSHI_ADDRESS[exports.ChainId.METIS] = '0x17Ee7E4dA37B01FC1bcc908fA63DF343F23B4B7C', _SUSHI_ADDRESS);
 var USDC_ADDRESS = (_USDC_ADDRESS = {}, _USDC_ADDRESS[exports.ChainId.ETHEREUM] = '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', _USDC_ADDRESS[exports.ChainId.ROPSTEN] = '0x0D9C8723B343A8368BebE0B5E89273fF8D712e3C', _USDC_ADDRESS[exports.ChainId.KOVAN] = '0xb7a4F3E9097C08dA09517b5aB877F7a917224ede', _USDC_ADDRESS[exports.ChainId.MATIC] = '0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174', _USDC_ADDRESS[exports.ChainId.MATIC_TESTNET] = '0x742DfA5Aa70a8212857966D491D67B09Ce7D6ec7', _USDC_ADDRESS[exports.ChainId.FANTOM] = '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75', _USDC_ADDRESS[exports.ChainId.BSC] = '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d', _USDC_ADDRESS[exports.ChainId.BSC_TESTNET] = '0x16227D60f7a0e586C66B005219dfc887D13C9531', _USDC_ADDRESS[exports.ChainId.HARMONY] = '0x985458E523dB3d53125813eD68c274899e9DfAb4', _USDC_ADDRESS[exports.ChainId.HECO] = '0x9362Bbef4B8313A8Aa9f0c9808B80577Aa26B73B', _USDC_ADDRESS[exports.ChainId.OKEX] = '0xc946DAf81b08146B1C7A8Da2A851Ddf2B3EAaf85', _USDC_ADDRESS[exports.ChainId.XDAI] = '0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83', _USDC_ADDRESS[exports.ChainId.ARBITRUM] = '0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8', _USDC_ADDRESS[exports.ChainId.AVALANCHE] = '0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664', _USDC_ADDRESS[exports.ChainId.MOONRIVER] = '0xE3F5a90F9cb311505cd691a46596599aA1A0AD7D', _USDC_ADDRESS[exports.ChainId.CELO] = '0xef4229c8c3250C675F21BCefa42f58EfbfF6002a', _USDC_ADDRESS[exports.ChainId.TELOS] = '0x818ec0A7Fe18Ff94269904fCED6AE3DaE6d6dC0b', _USDC_ADDRESS[exports.ChainId.FUSE] = '0x620fd5fa44BE6af63715Ef4E65DDFA0387aD13F5', _USDC_ADDRESS[exports.ChainId.MOONBEAM] = '0x8f552a71EFE5eeFc207Bf75485b356A0b3f01eC9', _USDC_ADDRESS[exports.ChainId.OPTIMISM] = '0x7F5c764cBc14f9669B88837ca1490cCa17c31607', _USDC_ADDRESS[exports.ChainId.KAVA] = '0xfA9343C3897324496A05fC75abeD6bAC29f8A40f', _USDC_ADDRESS[exports.ChainId.METIS] = '0xEA32A96608495e54156Ae48931A7c20f0dcc1a21', _USDC_ADDRESS);
-var BUSD_ADDRESS = (_BUSD_ADDRESS = {}, _BUSD_ADDRESS[exports.ChainId.BSC] = '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56', _BUSD_ADDRESS[exports.ChainId.BSC_TESTNET] = '0x8301F2213c0eeD49a7E28Ae4c3e91722919B8B47', _BUSD_ADDRESS); // export const USD_ADDRESS: AddressMap = {
+var BUSD_ADDRESS = (_BUSD_ADDRESS = {}, _BUSD_ADDRESS[exports.ChainId.BSC] = '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56', _BUSD_ADDRESS[exports.ChainId.BSC_TESTNET] = '0x8301F2213c0eeD49a7E28Ae4c3e91722919B8B47', _BUSD_ADDRESS);
+// export const USD_ADDRESS: AddressMap = {
 //   [ChainId.ETHEREUM]: USDC_ADDRESS[ChainId.ETHEREUM],
 //   [ChainId.ROPSTEN]: USDC_ADDRESS[ChainId.ROPSTEN],
 //   [ChainId.KOVAN]: USDC_ADDRESS[ChainId.KOVAN],
@@ -135,7 +136,6 @@ var BUSD_ADDRESS = (_BUSD_ADDRESS = {}, _BUSD_ADDRESS[exports.ChainId.BSC] = '0x
 //   [ChainId.KAVA]: USDC_ADDRESS[ChainId.KAVA],
 //   [ChainId.METIS]: USDC_ADDRESS[ChainId.METIS],
 // };
-
 var WETH9_ADDRESS = (_WETH9_ADDRESS = {}, _WETH9_ADDRESS[exports.ChainId.ETHEREUM] = '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', _WETH9_ADDRESS[exports.ChainId.ROPSTEN] = '0xc778417E063141139Fce010982780140Aa0cD5Ab', _WETH9_ADDRESS[exports.ChainId.RINKEBY] = '0xc778417E063141139Fce010982780140Aa0cD5Ab', _WETH9_ADDRESS[exports.ChainId.GÖRLI] = '0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6', _WETH9_ADDRESS[exports.ChainId.KOVAN] = '0xd0A1E359811322d97991E03f863a0C30C2cF029C', _WETH9_ADDRESS[exports.ChainId.ARBITRUM] = '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1', _WETH9_ADDRESS[exports.ChainId.ARBITRUM_TESTNET] = '0xf8456e5e6A225C2C1D74D8C9a4cB2B1d5dc1153b', _WETH9_ADDRESS[exports.ChainId.BSC] = '0x2170Ed0880ac9A755fd29B2688956BD959F933F8', _WETH9_ADDRESS[exports.ChainId.FANTOM] = '0x74b23882a30290451A17c44f4F05243b6b58C76d', _WETH9_ADDRESS[exports.ChainId.MATIC] = '0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619', _WETH9_ADDRESS[exports.ChainId.MATIC_TESTNET] = '0x714550C2C1Ea08688607D86ed8EeF4f5E4F22323', _WETH9_ADDRESS[exports.ChainId.OKEX] = '0x2170Ed0880ac9A755fd29B2688956BD959F933F8', _WETH9_ADDRESS[exports.ChainId.HECO] = '0x64FF637fB478863B7468bc97D30a5bF3A428a1fD', _WETH9_ADDRESS[exports.ChainId.HARMONY] = '0x6983D1E6DEf3690C4d616b13597A09e6193EA013', _WETH9_ADDRESS[exports.ChainId.XDAI] = '0x6A023CCd1ff6F2045C3309768eAd9E68F978f6e1', _WETH9_ADDRESS[exports.ChainId.AVALANCHE] = '0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB', _WETH9_ADDRESS[exports.ChainId.PALM] = '0x726138359C17F1E56bA8c4F737a7CAf724F6010b', _WETH9_ADDRESS[exports.ChainId.CELO] = '0x122013fd7dF1C6F636a5bb8f03108E876548b455', _WETH9_ADDRESS[exports.ChainId.MOONRIVER] = '0x639A647fbe20b6c8ac19E48E2de44ea792c62c5C', _WETH9_ADDRESS[exports.ChainId.TELOS] = '0xfA9343C3897324496A05fC75abeD6bAC29f8A40f', _WETH9_ADDRESS[exports.ChainId.FUSE] = '0xa722c13135930332Eb3d749B2F0906559D2C5b99', _WETH9_ADDRESS[exports.ChainId.MOONBEAM] = '0x30D2a9F5FDf90ACe8c17952cbb4eE48a55D916A7', _WETH9_ADDRESS[exports.ChainId.OPTIMISM] = '0x4200000000000000000000000000000000000006', _WETH9_ADDRESS[exports.ChainId.KAVA] = '0xE3F5a90F9cb311505cd691a46596599aA1A0AD7D', _WETH9_ADDRESS[exports.ChainId.METIS] = '0x420000000000000000000000000000000000000A', _WETH9_ADDRESS);
 var WNATIVE_ADDRESS = (_WNATIVE_ADDRESS = {}, _WNATIVE_ADDRESS[exports.ChainId.ETHEREUM] = WETH9_ADDRESS[exports.ChainId.ETHEREUM], _WNATIVE_ADDRESS[exports.ChainId.ROPSTEN] = WETH9_ADDRESS[exports.ChainId.ROPSTEN], _WNATIVE_ADDRESS[exports.ChainId.RINKEBY] = WETH9_ADDRESS[exports.ChainId.RINKEBY], _WNATIVE_ADDRESS[exports.ChainId.GÖRLI] = WETH9_ADDRESS[exports.ChainId.GÖRLI], _WNATIVE_ADDRESS[exports.ChainId.KOVAN] = WETH9_ADDRESS[exports.ChainId.KOVAN], _WNATIVE_ADDRESS[exports.ChainId.OPTIMISM] = WETH9_ADDRESS[exports.ChainId.OPTIMISM], _WNATIVE_ADDRESS[exports.ChainId.ARBITRUM] = WETH9_ADDRESS[exports.ChainId.ARBITRUM], _WNATIVE_ADDRESS[exports.ChainId.ARBITRUM_TESTNET] = WETH9_ADDRESS[exports.ChainId.ARBITRUM_TESTNET], _WNATIVE_ADDRESS[exports.ChainId.FANTOM] = '0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83', _WNATIVE_ADDRESS[exports.ChainId.FANTOM_TESTNET] = '0xf1277d1Ed8AD466beddF92ef448A132661956621', _WNATIVE_ADDRESS[exports.ChainId.MATIC] = '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270', _WNATIVE_ADDRESS[exports.ChainId.MATIC_TESTNET] = '0x5B67676a984807a212b1c59eBFc9B3568a474F0a', _WNATIVE_ADDRESS[exports.ChainId.XDAI] = '0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d', _WNATIVE_ADDRESS[exports.ChainId.BSC] = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', _WNATIVE_ADDRESS[exports.ChainId.BSC_TESTNET] = '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd', _WNATIVE_ADDRESS[exports.ChainId.MOONBEAM_TESTNET] = '0x372d0695E75563D9180F8CE31c9924D7e8aaac47', _WNATIVE_ADDRESS[exports.ChainId.AVALANCHE] = '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7', _WNATIVE_ADDRESS[exports.ChainId.AVALANCHE_TESTNET] = '0xd00ae08403B9bbb9124bB305C09058E32C39A48c', _WNATIVE_ADDRESS[exports.ChainId.HECO] = '0x5545153CCFcA01fbd7Dd11C0b23ba694D9509A6F', _WNATIVE_ADDRESS[exports.ChainId.HECO_TESTNET] = '0x5B2DA6F42CA09C77D577a12BeaD0446148830687', _WNATIVE_ADDRESS[exports.ChainId.HARMONY] = '0xcF664087a5bB0237a0BAd6742852ec6c8d69A27a', _WNATIVE_ADDRESS[exports.ChainId.HARMONY_TESTNET] = '0x7a2afac38517d512E55C0bCe3b6805c10a04D60F', _WNATIVE_ADDRESS[exports.ChainId.OKEX] = '0x8F8526dbfd6E38E3D8307702cA8469Bae6C56C15', _WNATIVE_ADDRESS[exports.ChainId.OKEX_TESTNET] = '0x2219845942d28716c0F7C605765fABDcA1a7d9E0', _WNATIVE_ADDRESS[exports.ChainId.PALM] = '0xF98cABF0a963452C5536330408B2590567611a71', _WNATIVE_ADDRESS[exports.ChainId.CELO] = '0x471EcE3750Da237f93B8E339c536989b8978a438', _WNATIVE_ADDRESS[exports.ChainId.MOONRIVER] = '0xf50225a84382c74CbdeA10b0c176f71fc3DE0C4d', _WNATIVE_ADDRESS[exports.ChainId.FUSE] = '0x0BE9e53fd7EDaC9F859882AfdDa116645287C629', _WNATIVE_ADDRESS[exports.ChainId.TELOS] = '0xD102cE6A4dB07D247fcc28F366A623Df0938CA9E', _WNATIVE_ADDRESS[exports.ChainId.MOONBEAM] = '0xAcc15dC74880C9944775448304B263D191c6077F', _WNATIVE_ADDRESS[exports.ChainId.KAVA] = '0xc86c7C0eFbd6A49B35E8714C5f59D99De09A225b', _WNATIVE_ADDRESS[exports.ChainId.METIS] = '0x75cb093E4D61d2A2e65D8e0BBb01DE8d89b53481', _WNATIVE_ADDRESS);
 var DAI_ADDRESS = (_DAI_ADDRESS = {}, _DAI_ADDRESS[exports.ChainId.ETHEREUM] = '0x6B175474E89094C44Da98b954EedeAC495271d0F', _DAI_ADDRESS[exports.ChainId.ROPSTEN] = '0xc2118d4d90b274016cB7a54c03EF52E6c537D957', _DAI_ADDRESS[exports.ChainId.KOVAN] = '0x4F96Fe3b7A6Cf9725f59d353F723c1bDb64CA6Aa', _DAI_ADDRESS[exports.ChainId.MATIC] = '0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063', _DAI_ADDRESS[exports.ChainId.FANTOM] = '0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E', _DAI_ADDRESS[exports.ChainId.BSC] = '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3', _DAI_ADDRESS[exports.ChainId.HARMONY] = '0xEf977d2f931C1978Db5F6747666fa1eACB0d0339', _DAI_ADDRESS[exports.ChainId.HECO] = '0x3D760a45D0887DFD89A2F5385a236B29Cb46ED2a', _DAI_ADDRESS[exports.ChainId.OKEX] = '0x21cDE7E32a6CAF4742d00d44B07279e7596d26B9', _DAI_ADDRESS[exports.ChainId.XDAI] = '0xe91D153E0b41518A2Ce8Dd3D7944Fa863463a97d', _DAI_ADDRESS[exports.ChainId.ARBITRUM] = '0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1', _DAI_ADDRESS[exports.ChainId.AVALANCHE] = '0xd586E7F844cEa2F87f50152665BCbc2C279D8d70', _DAI_ADDRESS[exports.ChainId.CELO] = '0x90Ca507a5D4458a4C6C6249d186b6dCb02a5BCCd', _DAI_ADDRESS[exports.ChainId.MOONRIVER] = '0x80A16016cC4A2E6a2CACA8a4a498b1699fF0f844', _DAI_ADDRESS[exports.ChainId.FUSE] = '0x94Ba7A27c7A95863d1bdC7645AC2951E0cca06bA', _DAI_ADDRESS[exports.ChainId.MOONBEAM] = '0xc234A67a4F840E61adE794be47de455361b52413', _DAI_ADDRESS[exports.ChainId.OPTIMISM] = '0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1', _DAI_ADDRESS[exports.ChainId.KAVA] = '0x765277EebeCA2e31912C9946eAe1021199B39C61', _DAI_ADDRESS[exports.ChainId.METIS] = '0x4c078361FC9BbB78DF910800A991C7c3DD2F6ce0', _DAI_ADDRESS);
@@ -179,10 +179,9 @@ function _defineProperties(target, props) {
     descriptor.enumerable = descriptor.enumerable || false;
     descriptor.configurable = true;
     if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
+    Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor);
   }
 }
-
 function _createClass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
@@ -191,38 +190,31 @@ function _createClass(Constructor, protoProps, staticProps) {
   });
   return Constructor;
 }
-
 function _extends() {
   _extends = Object.assign ? Object.assign.bind() : function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
-
       for (var key in source) {
         if (Object.prototype.hasOwnProperty.call(source, key)) {
           target[key] = source[key];
         }
       }
     }
-
     return target;
   };
   return _extends.apply(this, arguments);
 }
-
 function _inheritsLoose(subClass, superClass) {
   subClass.prototype = Object.create(superClass.prototype);
   subClass.prototype.constructor = subClass;
-
   _setPrototypeOf(subClass, superClass);
 }
-
 function _getPrototypeOf(o) {
   _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function _getPrototypeOf(o) {
     return o.__proto__ || Object.getPrototypeOf(o);
   };
   return _getPrototypeOf(o);
 }
-
 function _setPrototypeOf(o, p) {
   _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
     o.__proto__ = p;
@@ -230,12 +222,10 @@ function _setPrototypeOf(o, p) {
   };
   return _setPrototypeOf(o, p);
 }
-
 function _isNativeReflectConstruct() {
   if (typeof Reflect === "undefined" || !Reflect.construct) return false;
   if (Reflect.construct.sham) return false;
   if (typeof Proxy === "function") return true;
-
   try {
     Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
     return true;
@@ -243,7 +233,6 @@ function _isNativeReflectConstruct() {
     return false;
   }
 }
-
 function _construct(Parent, args, Class) {
   if (_isNativeReflectConstruct()) {
     _construct = Reflect.construct.bind();
@@ -257,34 +246,25 @@ function _construct(Parent, args, Class) {
       return instance;
     };
   }
-
   return _construct.apply(null, arguments);
 }
-
 function _isNativeFunction(fn) {
   return Function.toString.call(fn).indexOf("[native code]") !== -1;
 }
-
 function _wrapNativeSuper(Class) {
   var _cache = typeof Map === "function" ? new Map() : undefined;
-
   _wrapNativeSuper = function _wrapNativeSuper(Class) {
     if (Class === null || !_isNativeFunction(Class)) return Class;
-
     if (typeof Class !== "function") {
       throw new TypeError("Super expression must either be null or a function");
     }
-
     if (typeof _cache !== "undefined") {
       if (_cache.has(Class)) return _cache.get(Class);
-
       _cache.set(Class, Wrapper);
     }
-
     function Wrapper() {
       return _construct(Class, arguments, _getPrototypeOf(this).constructor);
     }
-
     Wrapper.prototype = Object.create(Class.prototype, {
       constructor: {
         value: Wrapper,
@@ -295,18 +275,14 @@ function _wrapNativeSuper(Class) {
     });
     return _setPrototypeOf(Wrapper, Class);
   };
-
   return _wrapNativeSuper(Class);
 }
-
 function _assertThisInitialized(self) {
   if (self === void 0) {
     throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
   }
-
   return self;
 }
-
 function _unsupportedIterableToArray(o, minLen) {
   if (!o) return;
   if (typeof o === "string") return _arrayLikeToArray(o, minLen);
@@ -315,19 +291,14 @@ function _unsupportedIterableToArray(o, minLen) {
   if (n === "Map" || n === "Set") return Array.from(o);
   if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
 }
-
 function _arrayLikeToArray(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
-
   for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
-
   return arr2;
 }
-
 function _createForOfIteratorHelperLoose(o, allowArrayLike) {
   var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"];
   if (it) return (it = it.call(o)).next.bind(it);
-
   if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {
     if (it) o = it;
     var i = 0;
@@ -341,14 +312,26 @@ function _createForOfIteratorHelperLoose(o, allowArrayLike) {
       };
     };
   }
-
   throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+function _toPrimitive(input, hint) {
+  if (typeof input !== "object" || input === null) return input;
+  var prim = input[Symbol.toPrimitive];
+  if (prim !== undefined) {
+    var res = prim.call(input, hint || "default");
+    if (typeof res !== "object") return res;
+    throw new TypeError("@@toPrimitive must return a primitive value.");
+  }
+  return (hint === "string" ? String : Number)(input);
+}
+function _toPropertyKey(arg) {
+  var key = _toPrimitive(arg, "string");
+  return typeof key === "symbol" ? key : String(key);
 }
 
 /**
  * A currency is any fungible financial instrument, including Ether, all ERC20 tokens, and other chain-native currencies
  */
-
 var AbstractCurrency =
 /**
  * Constructs an instance of the base class `BaseCurrency`.
@@ -369,22 +352,19 @@ function AbstractCurrency(chainId, decimals, symbol, name) {
 /**
  * Represents the native currency of the chain on which it resides, e.g.
  */
-
 var NativeCurrency = /*#__PURE__*/function (_AbstractCurrency) {
   _inheritsLoose(NativeCurrency, _AbstractCurrency);
-
   function NativeCurrency() {
     var _this;
-
     _this = _AbstractCurrency.apply(this, arguments) || this;
     _this.isNative = true;
     _this.isToken = false;
     return _this;
   }
-
   return NativeCurrency;
 }(AbstractCurrency);
 
+// warns if addresses are not checksummed
 function validateAndParseAddress(address$1) {
   try {
     var checksummedAddress = address.getAddress(address$1);
@@ -398,13 +378,10 @@ function validateAndParseAddress(address$1) {
 /**
  * Represents an ERC20 token with a unique address and some metadata.
  */
-
 var Token = /*#__PURE__*/function (_AbstractCurrency) {
   _inheritsLoose(Token, _AbstractCurrency);
-
   function Token(chainId, address, decimals, symbol, name) {
     var _this;
-
     _this = _AbstractCurrency.call(this, chainId, decimals, symbol, name) || this;
     _this.isNative = false;
     _this.isToken = true;
@@ -416,10 +393,7 @@ var Token = /*#__PURE__*/function (_AbstractCurrency) {
    * Returns true if the two tokens are equivalent, i.e. have the same chainId and address.
    * @param other other token to compare
    */
-
-
   var _proto = Token.prototype;
-
   _proto.equals = function equals(other) {
     return other.isToken && this.chainId === other.chainId && this.address === other.address;
   }
@@ -428,9 +402,7 @@ var Token = /*#__PURE__*/function (_AbstractCurrency) {
    * @param other other token to compare
    * @throws if the tokens have the same address
    * @throws if the tokens are on different chains
-   */
-  ;
-
+   */;
   _proto.sortsBefore = function sortsBefore(other) {
     !(this.chainId === other.chainId) ?  invariant(false, 'CHAIN_IDS')  : void 0;
     !(this.address !== other.address) ?  invariant(false, 'ADDRESSES')  : void 0;
@@ -438,22 +410,18 @@ var Token = /*#__PURE__*/function (_AbstractCurrency) {
   }
   /**
    * Return this token, which does not need to be wrapped
-   */
-  ;
-
+   */;
   _createClass(Token, [{
     key: "wrapped",
     get: function get() {
       return this;
     }
   }]);
-
   return Token;
 }(AbstractCurrency);
 /**
  * Compares two currencies for equality
  */
-
 function currencyEquals(currencyA, currencyB) {
   if (currencyA instanceof Token && currencyB instanceof Token) {
     return currencyA.equals(currencyB);
@@ -477,23 +445,17 @@ var SUSHI = (_SUSHI = {}, _SUSHI[exports.ChainId.ETHEREUM] = /*#__PURE__*/new To
 
 var Avalanche = /*#__PURE__*/function (_NativeCurrency) {
   _inheritsLoose(Avalanche, _NativeCurrency);
-
   function Avalanche(chainId) {
     return _NativeCurrency.call(this, chainId, 18, 'AVAX', 'Avalanche') || this;
   }
-
   Avalanche.onChain = function onChain(chainId) {
     var _this$_cache$chainId;
-
     return (_this$_cache$chainId = this._cache[chainId]) != null ? _this$_cache$chainId : this._cache[chainId] = new Avalanche(chainId);
   };
-
   var _proto = Avalanche.prototype;
-
   _proto.equals = function equals(other) {
     return other.isNative && other.chainId === this.chainId;
   };
-
   _createClass(Avalanche, [{
     key: "wrapped",
     get: function get() {
@@ -502,30 +464,23 @@ var Avalanche = /*#__PURE__*/function (_NativeCurrency) {
       return wnative;
     }
   }]);
-
   return Avalanche;
 }(NativeCurrency);
 Avalanche._cache = {};
 
 var Binance = /*#__PURE__*/function (_NativeCurrency) {
   _inheritsLoose(Binance, _NativeCurrency);
-
   function Binance(chainId) {
     return _NativeCurrency.call(this, chainId, 18, 'BNB', 'Binance Coin') || this;
   }
-
   Binance.onChain = function onChain(chainId) {
     var _this$_cache$chainId;
-
     return (_this$_cache$chainId = this._cache[chainId]) != null ? _this$_cache$chainId : this._cache[chainId] = new Binance(chainId);
   };
-
   var _proto = Binance.prototype;
-
   _proto.equals = function equals(other) {
     return other.isNative && other.chainId === this.chainId;
   };
-
   _createClass(Binance, [{
     key: "wrapped",
     get: function get() {
@@ -534,30 +489,23 @@ var Binance = /*#__PURE__*/function (_NativeCurrency) {
       return wnative;
     }
   }]);
-
   return Binance;
 }(NativeCurrency);
 Binance._cache = {};
 
 var Celo = /*#__PURE__*/function (_NativeCurrency) {
   _inheritsLoose(Celo, _NativeCurrency);
-
   function Celo(chainId) {
     return _NativeCurrency.call(this, chainId, 18, 'CELO', 'Celo') || this;
   }
-
   Celo.onChain = function onChain(chainId) {
     var _this$_cache$chainId;
-
     return (_this$_cache$chainId = this._cache[chainId]) != null ? _this$_cache$chainId : this._cache[chainId] = new Celo(chainId);
   };
-
   var _proto = Celo.prototype;
-
   _proto.equals = function equals(other) {
     return other.isNative && other.chainId === this.chainId;
   };
-
   _createClass(Celo, [{
     key: "wrapped",
     get: function get() {
@@ -566,7 +514,6 @@ var Celo = /*#__PURE__*/function (_NativeCurrency) {
       return wcelo;
     }
   }]);
-
   return Celo;
 }(NativeCurrency);
 Celo._cache = {};
@@ -574,26 +521,19 @@ Celo._cache = {};
 /**
  * Ether is the main usage of a 'native' currency, i.e. for Ethereum mainnet and all testnets
  */
-
 var Ether = /*#__PURE__*/function (_NativeCurrency) {
   _inheritsLoose(Ether, _NativeCurrency);
-
   function Ether(chainId) {
     return _NativeCurrency.call(this, chainId, 18, 'ETH', 'Ether') || this;
   }
-
   Ether.onChain = function onChain(chainId) {
     var _this$_etherCache$cha;
-
     return (_this$_etherCache$cha = this._etherCache[chainId]) != null ? _this$_etherCache$cha : this._etherCache[chainId] = new Ether(chainId);
   };
-
   var _proto = Ether.prototype;
-
   _proto.equals = function equals(other) {
     return other.isNative && other.chainId === this.chainId;
   };
-
   _createClass(Ether, [{
     key: "wrapped",
     get: function get() {
@@ -602,30 +542,23 @@ var Ether = /*#__PURE__*/function (_NativeCurrency) {
       return weth9;
     }
   }]);
-
   return Ether;
 }(NativeCurrency);
 Ether._etherCache = {};
 
 var Fantom = /*#__PURE__*/function (_NativeCurrency) {
   _inheritsLoose(Fantom, _NativeCurrency);
-
   function Fantom(chainId) {
     return _NativeCurrency.call(this, chainId, 18, 'FTM', 'Fantom') || this;
   }
-
   Fantom.onChain = function onChain(chainId) {
     var _this$_cache$chainId;
-
     return (_this$_cache$chainId = this._cache[chainId]) != null ? _this$_cache$chainId : this._cache[chainId] = new Fantom(chainId);
   };
-
   var _proto = Fantom.prototype;
-
   _proto.equals = function equals(other) {
     return other.isNative && other.chainId === this.chainId;
   };
-
   _createClass(Fantom, [{
     key: "wrapped",
     get: function get() {
@@ -634,30 +567,23 @@ var Fantom = /*#__PURE__*/function (_NativeCurrency) {
       return wnative;
     }
   }]);
-
   return Fantom;
 }(NativeCurrency);
 Fantom._cache = {};
 
 var Harmony = /*#__PURE__*/function (_NativeCurrency) {
   _inheritsLoose(Harmony, _NativeCurrency);
-
   function Harmony(chainId) {
     return _NativeCurrency.call(this, chainId, 18, 'ONE', 'Harmony') || this;
   }
-
   Harmony.onChain = function onChain(chainId) {
     var _this$_cache$chainId;
-
     return (_this$_cache$chainId = this._cache[chainId]) != null ? _this$_cache$chainId : this._cache[chainId] = new Harmony(chainId);
   };
-
   var _proto = Harmony.prototype;
-
   _proto.equals = function equals(other) {
     return other.isNative && other.chainId === this.chainId;
   };
-
   _createClass(Harmony, [{
     key: "wrapped",
     get: function get() {
@@ -666,30 +592,23 @@ var Harmony = /*#__PURE__*/function (_NativeCurrency) {
       return wnative;
     }
   }]);
-
   return Harmony;
 }(NativeCurrency);
 Harmony._cache = {};
 
 var Heco = /*#__PURE__*/function (_NativeCurrency) {
   _inheritsLoose(Heco, _NativeCurrency);
-
   function Heco(chainId) {
     return _NativeCurrency.call(this, chainId, 18, 'HT', 'Huobi Token') || this;
   }
-
   Heco.onChain = function onChain(chainId) {
     var _this$_cache$chainId;
-
     return (_this$_cache$chainId = this._cache[chainId]) != null ? _this$_cache$chainId : this._cache[chainId] = new Heco(chainId);
   };
-
   var _proto = Heco.prototype;
-
   _proto.equals = function equals(other) {
     return other.isNative && other.chainId === this.chainId;
   };
-
   _createClass(Heco, [{
     key: "wrapped",
     get: function get() {
@@ -698,30 +617,23 @@ var Heco = /*#__PURE__*/function (_NativeCurrency) {
       return wnative;
     }
   }]);
-
   return Heco;
 }(NativeCurrency);
 Heco._cache = {};
 
 var Matic = /*#__PURE__*/function (_NativeCurrency) {
   _inheritsLoose(Matic, _NativeCurrency);
-
   function Matic(chainId) {
     return _NativeCurrency.call(this, chainId, 18, 'MATIC', 'Matic') || this;
   }
-
   Matic.onChain = function onChain(chainId) {
     var _this$_cache$chainId;
-
     return (_this$_cache$chainId = this._cache[chainId]) != null ? _this$_cache$chainId : this._cache[chainId] = new Matic(chainId);
   };
-
   var _proto = Matic.prototype;
-
   _proto.equals = function equals(other) {
     return other.isNative && other.chainId === this.chainId;
   };
-
   _createClass(Matic, [{
     key: "wrapped",
     get: function get() {
@@ -730,30 +642,23 @@ var Matic = /*#__PURE__*/function (_NativeCurrency) {
       return wnative;
     }
   }]);
-
   return Matic;
 }(NativeCurrency);
 Matic._cache = {};
 
 var Movr = /*#__PURE__*/function (_NativeCurrency) {
   _inheritsLoose(Movr, _NativeCurrency);
-
   function Movr(chainId) {
     return _NativeCurrency.call(this, chainId, 18, 'MOVR', 'Moonriver') || this;
   }
-
   Movr.onChain = function onChain(chainId) {
     var _this$_cache$chainId;
-
     return (_this$_cache$chainId = this._cache[chainId]) != null ? _this$_cache$chainId : this._cache[chainId] = new Movr(chainId);
   };
-
   var _proto = Movr.prototype;
-
   _proto.equals = function equals(other) {
     return other.isNative && other.chainId === this.chainId;
   };
-
   _createClass(Movr, [{
     key: "wrapped",
     get: function get() {
@@ -762,30 +667,23 @@ var Movr = /*#__PURE__*/function (_NativeCurrency) {
       return wnative;
     }
   }]);
-
   return Movr;
 }(NativeCurrency);
 Movr._cache = {};
 
 var Okex = /*#__PURE__*/function (_NativeCurrency) {
   _inheritsLoose(Okex, _NativeCurrency);
-
   function Okex(chainId) {
     return _NativeCurrency.call(this, chainId, 18, 'OKT', 'OKExChain') || this;
   }
-
   Okex.onChain = function onChain(chainId) {
     var _this$_cache$chainId;
-
     return (_this$_cache$chainId = this._cache[chainId]) != null ? _this$_cache$chainId : this._cache[chainId] = new Okex(chainId);
   };
-
   var _proto = Okex.prototype;
-
   _proto.equals = function equals(other) {
     return other.isNative && other.chainId === this.chainId;
   };
-
   _createClass(Okex, [{
     key: "wrapped",
     get: function get() {
@@ -794,30 +692,23 @@ var Okex = /*#__PURE__*/function (_NativeCurrency) {
       return wnative;
     }
   }]);
-
   return Okex;
 }(NativeCurrency);
 Okex._cache = {};
 
 var xDai = /*#__PURE__*/function (_NativeCurrency) {
   _inheritsLoose(xDai, _NativeCurrency);
-
   function xDai(chainId) {
     return _NativeCurrency.call(this, chainId, 18, 'XDAI', 'xDai') || this;
   }
-
   xDai.onChain = function onChain(chainId) {
     var _this$_cache$chainId;
-
     return (_this$_cache$chainId = this._cache[chainId]) != null ? _this$_cache$chainId : this._cache[chainId] = new xDai(chainId);
   };
-
   var _proto = xDai.prototype;
-
   _proto.equals = function equals(other) {
     return other.isNative && other.chainId === this.chainId;
   };
-
   _createClass(xDai, [{
     key: "wrapped",
     get: function get() {
@@ -826,30 +717,23 @@ var xDai = /*#__PURE__*/function (_NativeCurrency) {
       return wnative;
     }
   }]);
-
   return xDai;
 }(NativeCurrency);
 xDai._cache = {};
 
 var Palm = /*#__PURE__*/function (_NativeCurrency) {
   _inheritsLoose(Palm, _NativeCurrency);
-
   function Palm(chainId) {
     return _NativeCurrency.call(this, chainId, 18, 'PALM', 'Palm') || this;
   }
-
   Palm.onChain = function onChain(chainId) {
     var _this$_cache$chainId;
-
     return (_this$_cache$chainId = this._cache[chainId]) != null ? _this$_cache$chainId : this._cache[chainId] = new Palm(chainId);
   };
-
   var _proto = Palm.prototype;
-
   _proto.equals = function equals(other) {
     return other.isNative && other.chainId === this.chainId;
   };
-
   _createClass(Palm, [{
     key: "wrapped",
     get: function get() {
@@ -858,30 +742,23 @@ var Palm = /*#__PURE__*/function (_NativeCurrency) {
       return wnative;
     }
   }]);
-
   return Palm;
 }(NativeCurrency);
 Palm._cache = {};
 
 var Fuse = /*#__PURE__*/function (_NativeCurrency) {
   _inheritsLoose(Fuse, _NativeCurrency);
-
   function Fuse(chainId) {
     return _NativeCurrency.call(this, chainId, 18, 'FUSE', 'Fuse') || this;
   }
-
   Fuse.onChain = function onChain(chainId) {
     var _this$_cache$chainId;
-
     return (_this$_cache$chainId = this._cache[chainId]) != null ? _this$_cache$chainId : this._cache[chainId] = new Fuse(chainId);
   };
-
   var _proto = Fuse.prototype;
-
   _proto.equals = function equals(other) {
     return other.isNative && other.chainId === this.chainId;
   };
-
   _createClass(Fuse, [{
     key: "wrapped",
     get: function get() {
@@ -890,30 +767,23 @@ var Fuse = /*#__PURE__*/function (_NativeCurrency) {
       return wnative;
     }
   }]);
-
   return Fuse;
 }(NativeCurrency);
 Fuse._cache = {};
 
 var Telos = /*#__PURE__*/function (_NativeCurrency) {
   _inheritsLoose(Telos, _NativeCurrency);
-
   function Telos(chainId) {
     return _NativeCurrency.call(this, chainId, 18, 'TLOS', 'Telos') || this;
   }
-
   Telos.onChain = function onChain(chainId) {
     var _this$_cache$chainId;
-
     return (_this$_cache$chainId = this._cache[chainId]) != null ? _this$_cache$chainId : this._cache[chainId] = new Telos(chainId);
   };
-
   var _proto = Telos.prototype;
-
   _proto.equals = function equals(other) {
     return other.isNative && other.chainId === this.chainId;
   };
-
   _createClass(Telos, [{
     key: "wrapped",
     get: function get() {
@@ -922,30 +792,23 @@ var Telos = /*#__PURE__*/function (_NativeCurrency) {
       return wnative;
     }
   }]);
-
   return Telos;
 }(NativeCurrency);
 Telos._cache = {};
 
 var Glmr = /*#__PURE__*/function (_NativeCurrency) {
   _inheritsLoose(Glmr, _NativeCurrency);
-
   function Glmr(chainId) {
     return _NativeCurrency.call(this, chainId, 18, 'GLMR', 'Glimmer') || this;
   }
-
   Glmr.onChain = function onChain(chainId) {
     var _this$_cache$chainId;
-
     return (_this$_cache$chainId = this._cache[chainId]) != null ? _this$_cache$chainId : this._cache[chainId] = new Glmr(chainId);
   };
-
   var _proto = Glmr.prototype;
-
   _proto.equals = function equals(other) {
     return other.isNative && other.chainId === this.chainId;
   };
-
   _createClass(Glmr, [{
     key: "wrapped",
     get: function get() {
@@ -954,30 +817,23 @@ var Glmr = /*#__PURE__*/function (_NativeCurrency) {
       return wnative;
     }
   }]);
-
   return Glmr;
 }(NativeCurrency);
 Glmr._cache = {};
 
 var Kava = /*#__PURE__*/function (_NativeCurrency) {
   _inheritsLoose(Kava, _NativeCurrency);
-
   function Kava(chainId) {
     return _NativeCurrency.call(this, chainId, 18, 'KAVA', 'Kava') || this;
   }
-
   Kava.onChain = function onChain(chainId) {
     var _this$_cache$chainId;
-
     return (_this$_cache$chainId = this._cache[chainId]) != null ? _this$_cache$chainId : this._cache[chainId] = new Kava(chainId);
   };
-
   var _proto = Kava.prototype;
-
   _proto.equals = function equals(other) {
     return other.isNative && other.chainId === this.chainId;
   };
-
   _createClass(Kava, [{
     key: "wrapped",
     get: function get() {
@@ -986,30 +842,23 @@ var Kava = /*#__PURE__*/function (_NativeCurrency) {
       return wnative;
     }
   }]);
-
   return Kava;
 }(NativeCurrency);
 Kava._cache = {};
 
 var Metis = /*#__PURE__*/function (_NativeCurrency) {
   _inheritsLoose(Metis, _NativeCurrency);
-
   function Metis(chainId) {
     return _NativeCurrency.call(this, chainId, 18, 'METIS', 'Metis') || this;
   }
-
   Metis.onChain = function onChain(chainId) {
     var _this$_cache$chainId;
-
     return (_this$_cache$chainId = this._cache[chainId]) != null ? _this$_cache$chainId : this._cache[chainId] = new Metis(chainId);
   };
-
   var _proto = Metis.prototype;
-
   _proto.equals = function equals(other) {
     return other.isNative && other.chainId === this.chainId;
   };
-
   _createClass(Metis, [{
     key: "wrapped",
     get: function get() {
@@ -1018,7 +867,6 @@ var Metis = /*#__PURE__*/function (_NativeCurrency) {
       return wnative;
     }
   }]);
-
   return Metis;
 }(NativeCurrency);
 Metis._cache = {};
@@ -1026,8 +874,8 @@ Metis._cache = {};
 var _NATIVE;
 var NATIVE = (_NATIVE = {}, _NATIVE[exports.ChainId.ETHEREUM] = /*#__PURE__*/Ether.onChain(exports.ChainId.ETHEREUM), _NATIVE[exports.ChainId.ROPSTEN] = /*#__PURE__*/Ether.onChain(exports.ChainId.ROPSTEN), _NATIVE[exports.ChainId.RINKEBY] = /*#__PURE__*/Ether.onChain(exports.ChainId.RINKEBY), _NATIVE[exports.ChainId.GÖRLI] = /*#__PURE__*/Ether.onChain(exports.ChainId.GÖRLI), _NATIVE[exports.ChainId.KOVAN] = /*#__PURE__*/Ether.onChain(exports.ChainId.KOVAN), _NATIVE[exports.ChainId.FANTOM] = /*#__PURE__*/Fantom.onChain(exports.ChainId.FANTOM), _NATIVE[exports.ChainId.FANTOM_TESTNET] = /*#__PURE__*/Fantom.onChain(exports.ChainId.FANTOM_TESTNET), _NATIVE[exports.ChainId.MATIC] = /*#__PURE__*/Matic.onChain(exports.ChainId.MATIC), _NATIVE[exports.ChainId.MATIC_TESTNET] = /*#__PURE__*/Matic.onChain(exports.ChainId.MATIC_TESTNET), _NATIVE[exports.ChainId.XDAI] = /*#__PURE__*/xDai.onChain(exports.ChainId.XDAI), _NATIVE[exports.ChainId.BSC] = /*#__PURE__*/Binance.onChain(exports.ChainId.BSC), _NATIVE[exports.ChainId.BSC_TESTNET] = /*#__PURE__*/Binance.onChain(exports.ChainId.BSC_TESTNET), _NATIVE[exports.ChainId.ARBITRUM] = /*#__PURE__*/Ether.onChain(exports.ChainId.ARBITRUM), _NATIVE[exports.ChainId.ARBITRUM_TESTNET] = /*#__PURE__*/Ether.onChain(exports.ChainId.ARBITRUM_TESTNET), _NATIVE[exports.ChainId.AVALANCHE] = /*#__PURE__*/Avalanche.onChain(exports.ChainId.AVALANCHE), _NATIVE[exports.ChainId.AVALANCHE_TESTNET] = /*#__PURE__*/Avalanche.onChain(exports.ChainId.AVALANCHE_TESTNET), _NATIVE[exports.ChainId.HECO] = /*#__PURE__*/Heco.onChain(exports.ChainId.HECO), _NATIVE[exports.ChainId.HECO_TESTNET] = /*#__PURE__*/Heco.onChain(exports.ChainId.HECO_TESTNET), _NATIVE[exports.ChainId.HARMONY] = /*#__PURE__*/Harmony.onChain(exports.ChainId.HARMONY), _NATIVE[exports.ChainId.HARMONY_TESTNET] = /*#__PURE__*/Harmony.onChain(exports.ChainId.HARMONY_TESTNET), _NATIVE[exports.ChainId.OKEX] = /*#__PURE__*/Okex.onChain(exports.ChainId.OKEX), _NATIVE[exports.ChainId.OKEX_TESTNET] = /*#__PURE__*/Okex.onChain(exports.ChainId.OKEX_TESTNET), _NATIVE[exports.ChainId.CELO] = /*#__PURE__*/Celo.onChain(exports.ChainId.CELO), _NATIVE[exports.ChainId.PALM] = /*#__PURE__*/Palm.onChain(exports.ChainId.PALM), _NATIVE[exports.ChainId.MOONRIVER] = /*#__PURE__*/Movr.onChain(exports.ChainId.MOONRIVER), _NATIVE[exports.ChainId.FUSE] = /*#__PURE__*/Fuse.onChain(exports.ChainId.FUSE), _NATIVE[exports.ChainId.TELOS] = /*#__PURE__*/Telos.onChain(exports.ChainId.TELOS), _NATIVE[exports.ChainId.MOONBEAM] = /*#__PURE__*/Glmr.onChain(exports.ChainId.MOONBEAM), _NATIVE[exports.ChainId.OPTIMISM] = /*#__PURE__*/Ether.onChain(exports.ChainId.OPTIMISM), _NATIVE[exports.ChainId.KAVA] = /*#__PURE__*/Kava.onChain(exports.ChainId.KAVA), _NATIVE[exports.ChainId.METIS] = /*#__PURE__*/Metis.onChain(exports.ChainId.METIS), _NATIVE);
 
-var MaxUint256 = /*#__PURE__*/JSBI.BigInt('0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'); // exports for internal consumption
-
+var MaxUint256 = /*#__PURE__*/JSBI.BigInt('0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff');
+// exports for internal consumption
 var ZERO = /*#__PURE__*/JSBI.BigInt(0);
 var ONE = /*#__PURE__*/JSBI.BigInt(1);
 var TWO = /*#__PURE__*/JSBI.BigInt(2);
@@ -1048,40 +896,32 @@ var CAN_SET_PROTOTYPE = ('setPrototypeOf' in Object);
  * Indicates that the pair has insufficient reserves for a desired output amount. I.e. the amount of output cannot be
  * obtained by sending any amount of input.
  */
-
 var InsufficientReservesError = /*#__PURE__*/function (_Error) {
   _inheritsLoose(InsufficientReservesError, _Error);
-
   function InsufficientReservesError() {
     var _this;
-
     _this = _Error.call(this) || this;
     _this.isInsufficientReservesError = true;
     _this.name = _this.constructor.name;
     if (CAN_SET_PROTOTYPE) Object.setPrototypeOf(_assertThisInitialized(_this), (this instanceof InsufficientReservesError ? this.constructor : void 0).prototype);
     return _this;
   }
-
   return InsufficientReservesError;
 }( /*#__PURE__*/_wrapNativeSuper(Error));
 /**
  * Indicates that the input amount is too small to produce any amount of output. I.e. the amount of input sent is less
  * than the price of a single unit of output after fees.
  */
-
 var InsufficientInputAmountError = /*#__PURE__*/function (_Error2) {
   _inheritsLoose(InsufficientInputAmountError, _Error2);
-
   function InsufficientInputAmountError() {
     var _this2;
-
     _this2 = _Error2.call(this) || this;
     _this2.isInsufficientInputAmountError = true;
     _this2.name = _this2.constructor.name;
     if (CAN_SET_PROTOTYPE) Object.setPrototypeOf(_assertThisInitialized(_this2), (this instanceof InsufficientInputAmountError ? this.constructor : void 0).prototype);
     return _this2;
   }
-
   return InsufficientInputAmountError;
 }( /*#__PURE__*/_wrapNativeSuper(Error));
 
@@ -1096,80 +936,63 @@ var Fraction = /*#__PURE__*/function () {
     if (denominator === void 0) {
       denominator = JSBI.BigInt(1);
     }
-
     this.numerator = JSBI.BigInt(numerator);
     this.denominator = JSBI.BigInt(denominator);
   }
-
   Fraction.tryParseFraction = function tryParseFraction(fractionish) {
     if (fractionish instanceof JSBI || typeof fractionish === 'number' || typeof fractionish === 'string') return new Fraction(fractionish);
     if ('numerator' in fractionish && 'denominator' in fractionish) return fractionish;
     throw new Error('Could not parse fraction');
-  } // performs floor division
+  }
+  // performs floor division
   ;
-
   var _proto = Fraction.prototype;
-
   _proto.invert = function invert() {
     return new Fraction(this.denominator, this.numerator);
   };
-
   _proto.add = function add(other) {
     var otherParsed = Fraction.tryParseFraction(other);
-
     if (JSBI.equal(this.denominator, otherParsed.denominator)) {
       return new Fraction(JSBI.add(this.numerator, otherParsed.numerator), this.denominator);
     }
-
     return new Fraction(JSBI.add(JSBI.multiply(this.numerator, otherParsed.denominator), JSBI.multiply(otherParsed.numerator, this.denominator)), JSBI.multiply(this.denominator, otherParsed.denominator));
   };
-
   _proto.subtract = function subtract(other) {
     var otherParsed = Fraction.tryParseFraction(other);
-
     if (JSBI.equal(this.denominator, otherParsed.denominator)) {
       return new Fraction(JSBI.subtract(this.numerator, otherParsed.numerator), this.denominator);
     }
-
     return new Fraction(JSBI.subtract(JSBI.multiply(this.numerator, otherParsed.denominator), JSBI.multiply(otherParsed.numerator, this.denominator)), JSBI.multiply(this.denominator, otherParsed.denominator));
   };
-
   _proto.lessThan = function lessThan(other) {
     var otherParsed = Fraction.tryParseFraction(other);
     return JSBI.lessThan(JSBI.multiply(this.numerator, otherParsed.denominator), JSBI.multiply(otherParsed.numerator, this.denominator));
   };
-
   _proto.equalTo = function equalTo(other) {
     var otherParsed = Fraction.tryParseFraction(other);
     return JSBI.equal(JSBI.multiply(this.numerator, otherParsed.denominator), JSBI.multiply(otherParsed.numerator, this.denominator));
   };
-
   _proto.greaterThan = function greaterThan(other) {
     var otherParsed = Fraction.tryParseFraction(other);
     return JSBI.greaterThan(JSBI.multiply(this.numerator, otherParsed.denominator), JSBI.multiply(otherParsed.numerator, this.denominator));
   };
-
   _proto.multiply = function multiply(other) {
     var otherParsed = Fraction.tryParseFraction(other);
     return new Fraction(JSBI.multiply(this.numerator, otherParsed.numerator), JSBI.multiply(this.denominator, otherParsed.denominator));
   };
-
   _proto.divide = function divide(other) {
     var otherParsed = Fraction.tryParseFraction(other);
     return new Fraction(JSBI.multiply(this.numerator, otherParsed.denominator), JSBI.multiply(this.denominator, otherParsed.numerator));
   };
-
   _proto.toSignificant = function toSignificant(significantDigits, format, rounding) {
     if (format === void 0) {
       format = {
         groupSeparator: ''
       };
     }
-
     if (rounding === void 0) {
       rounding = exports.Rounding.ROUND_HALF_UP;
     }
-
     !Number.isInteger(significantDigits) ?  invariant(false, significantDigits + " is not an integer.")  : void 0;
     !(significantDigits > 0) ?  invariant(false, significantDigits + " is not positive.")  : void 0;
     Decimal.set({
@@ -1179,18 +1002,15 @@ var Fraction = /*#__PURE__*/function () {
     var quotient = new Decimal(this.numerator.toString()).div(this.denominator.toString()).toSignificantDigits(significantDigits);
     return quotient.toFormat(quotient.decimalPlaces(), format);
   };
-
   _proto.toFixed = function toFixed(decimalPlaces, format, rounding) {
     if (format === void 0) {
       format = {
         groupSeparator: ''
       };
     }
-
     if (rounding === void 0) {
       rounding = exports.Rounding.ROUND_HALF_UP;
     }
-
     !Number.isInteger(decimalPlaces) ?  invariant(false, decimalPlaces + " is not an integer.")  : void 0;
     !(decimalPlaces >= 0) ?  invariant(false, decimalPlaces + " is negative.")  : void 0;
     Big.DP = decimalPlaces;
@@ -1199,15 +1019,13 @@ var Fraction = /*#__PURE__*/function () {
   }
   /**
    * Helper method for converting any super class back to a fraction
-   */
-  ;
-
+   */;
   _createClass(Fraction, [{
     key: "quotient",
     get: function get() {
       return JSBI.divide(this.numerator, this.denominator);
-    } // remainder after floor division
-
+    }
+    // remainder after floor division
   }, {
     key: "remainder",
     get: function get() {
@@ -1219,7 +1037,6 @@ var Fraction = /*#__PURE__*/function () {
       return new Fraction(this.numerator, this.denominator);
     }
   }]);
-
   return Fraction;
 }();
 
@@ -1227,10 +1044,8 @@ var Big$1 = /*#__PURE__*/toFormat(_Big);
 Big$1.strict = true;
 var CurrencyAmount = /*#__PURE__*/function (_Fraction) {
   _inheritsLoose(CurrencyAmount, _Fraction);
-
   function CurrencyAmount(currency, numerator, denominator) {
     var _this;
-
     _this = _Fraction.call(this, numerator, denominator) || this;
     !JSBI.lessThanOrEqual(_this.quotient, MaxUint256) ?  invariant(false, 'AMOUNT')  : void 0;
     _this.currency = currency;
@@ -1242,8 +1057,6 @@ var CurrencyAmount = /*#__PURE__*/function (_Fraction) {
    * @param currency the currency in the amount
    * @param rawAmount the raw token or ether amount
    */
-
-
   CurrencyAmount.fromRawAmount = function fromRawAmount(currency, rawAmount) {
     return new CurrencyAmount(currency, rawAmount);
   }
@@ -1252,79 +1065,57 @@ var CurrencyAmount = /*#__PURE__*/function (_Fraction) {
    * @param currency the currency
    * @param numerator the numerator of the fractional token amount
    * @param denominator the denominator of the fractional token amount
-   */
-  ;
-
+   */;
   CurrencyAmount.fromFractionalAmount = function fromFractionalAmount(currency, numerator, denominator) {
     return new CurrencyAmount(currency, numerator, denominator);
   };
-
   var _proto = CurrencyAmount.prototype;
-
   _proto.add = function add(other) {
     !this.currency.equals(other.currency) ?  invariant(false, 'CURRENCY')  : void 0;
-
     var added = _Fraction.prototype.add.call(this, other);
-
     return CurrencyAmount.fromFractionalAmount(this.currency, added.numerator, added.denominator);
   };
-
   _proto.subtract = function subtract(other) {
     !this.currency.equals(other.currency) ?  invariant(false, 'CURRENCY')  : void 0;
-
     var subtracted = _Fraction.prototype.subtract.call(this, other);
-
     return CurrencyAmount.fromFractionalAmount(this.currency, subtracted.numerator, subtracted.denominator);
   };
-
   _proto.multiply = function multiply(other) {
     var multiplied = _Fraction.prototype.multiply.call(this, other);
-
     return CurrencyAmount.fromFractionalAmount(this.currency, multiplied.numerator, multiplied.denominator);
   };
-
   _proto.divide = function divide(other) {
     var divided = _Fraction.prototype.divide.call(this, other);
-
     return CurrencyAmount.fromFractionalAmount(this.currency, divided.numerator, divided.denominator);
   };
-
   _proto.toSignificant = function toSignificant(significantDigits, format, rounding) {
     if (significantDigits === void 0) {
       significantDigits = 6;
     }
-
     if (rounding === void 0) {
       rounding = exports.Rounding.ROUND_DOWN;
     }
-
     return _Fraction.prototype.divide.call(this, this.decimalScale).toSignificant(significantDigits, format, rounding);
   };
-
   _proto.toFixed = function toFixed(decimalPlaces, format, rounding) {
     if (decimalPlaces === void 0) {
       decimalPlaces = this.currency.decimals;
     }
-
     if (rounding === void 0) {
       rounding = exports.Rounding.ROUND_DOWN;
     }
-
     !(decimalPlaces <= this.currency.decimals) ?  invariant(false, 'DECIMALS')  : void 0;
     return _Fraction.prototype.divide.call(this, this.decimalScale).toFixed(decimalPlaces, format, rounding);
   };
-
   _proto.toExact = function toExact(format) {
     if (format === void 0) {
       format = {
         groupSeparator: ''
       };
     }
-
     Big$1.DP = this.currency.decimals;
     return new Big$1(this.quotient.toString()).div(this.decimalScale.toString()).toFormat(format);
   };
-
   /**
    * Returns a string representation of the address and currency amount.
    * Useful in cases where a dependency is needed to detect changes (e.g. useEffect).
@@ -1333,7 +1124,6 @@ var CurrencyAmount = /*#__PURE__*/function (_Fraction) {
   _proto.serialize = function serialize() {
     return "[" + this.currency.wrapped.address + " - " + this.toExact() + "]";
   };
-
   _createClass(CurrencyAmount, [{
     key: "wrapped",
     get: function get() {
@@ -1341,26 +1131,21 @@ var CurrencyAmount = /*#__PURE__*/function (_Fraction) {
       return CurrencyAmount.fromFractionalAmount(this.currency.wrapped, this.numerator, this.denominator);
     }
   }]);
-
   return CurrencyAmount;
 }(Fraction);
 
 var Price = /*#__PURE__*/function (_Fraction) {
   _inheritsLoose(Price, _Fraction);
-
   /**
    * Construct a price, either with the base and quote currency amount, or the
    * @param args
    */
   function Price() {
     var _this;
-
     var baseCurrency, quoteCurrency, denominator, numerator;
-
     for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
       args[_key] = arguments[_key];
     }
-
     if (args.length === 4) {
       baseCurrency = args[0];
       quoteCurrency = args[1];
@@ -1374,7 +1159,6 @@ var Price = /*#__PURE__*/function (_Fraction) {
       denominator = _ref[2];
       numerator = _ref[3];
     }
-
     _this = _Fraction.call(this, numerator, denominator) || this;
     _this.baseCurrency = baseCurrency;
     _this.quoteCurrency = quoteCurrency;
@@ -1384,81 +1168,60 @@ var Price = /*#__PURE__*/function (_Fraction) {
   /**
    * Flip the price, switching the base and quote currency
    */
-
-
   var _proto = Price.prototype;
-
   _proto.invert = function invert() {
     return new Price(this.quoteCurrency, this.baseCurrency, this.numerator, this.denominator);
   }
   /**
    * Multiply the price by another price, returning a new price. The other price must have the same base currency as this price's quote currency
    * @param other the other price
-   */
-  ;
-
+   */;
   _proto.multiply = function multiply(other) {
     !this.quoteCurrency.equals(other.baseCurrency) ?  invariant(false, 'TOKEN')  : void 0;
-
     var fraction = _Fraction.prototype.multiply.call(this, other);
-
     return new Price(this.baseCurrency, other.quoteCurrency, fraction.denominator, fraction.numerator);
   }
   /**
    * Return the amount of quote currency corresponding to a given amount of the base currency
    * @param currencyAmount the amount of base currency to quote against the price
-   */
-  ;
-
+   */;
   _proto.quote = function quote(currencyAmount) {
     !currencyAmount.currency.equals(this.baseCurrency) ?  invariant(false, 'TOKEN')  : void 0;
-
     var result = _Fraction.prototype.multiply.call(this, currencyAmount);
-
     return CurrencyAmount.fromFractionalAmount(this.quoteCurrency, result.numerator, result.denominator);
   }
   /**
    * Get the value scaled by decimals for formatting
    * @private
-   */
-  ;
-
+   */;
   _proto.toSignificant = function toSignificant(significantDigits, format, rounding) {
     if (significantDigits === void 0) {
       significantDigits = 6;
     }
-
     return this.adjustedForDecimals.toSignificant(significantDigits, format, rounding);
   };
-
   _proto.toFixed = function toFixed(decimalPlaces, format, rounding) {
     if (decimalPlaces === void 0) {
       decimalPlaces = 4;
     }
-
     return this.adjustedForDecimals.toFixed(decimalPlaces, format, rounding);
   };
-
   _createClass(Price, [{
     key: "adjustedForDecimals",
     get: function get() {
       return _Fraction.prototype.multiply.call(this, this.scalar);
     }
   }]);
-
   return Price;
 }(Fraction);
 
 var computePairAddress = function computePairAddress(_ref) {
   var factoryAddress = _ref.factoryAddress,
-      tokenA = _ref.tokenA,
-      tokenB = _ref.tokenB;
-
+    tokenA = _ref.tokenA,
+    tokenB = _ref.tokenB;
   var _ref2 = tokenA.sortsBefore(tokenB) ? [tokenA, tokenB] : [tokenB, tokenA],
-      token0 = _ref2[0],
-      token1 = _ref2[1]; // does safety checks
-
-
+    token0 = _ref2[0],
+    token1 = _ref2[1]; // does safety checks
   return address.getCreate2Address(factoryAddress, solidity.keccak256(['bytes'], [solidity.pack(['address', 'address'], [token0.address, token1.address])]), INIT_CODE_HASH[token0.chainId]);
 };
 
@@ -1467,24 +1230,20 @@ var MAX_SAFE_INTEGER = /*#__PURE__*/JSBI.BigInt(Number.MAX_SAFE_INTEGER);
  * Computes floor(sqrt(value))
  * @param value the value for which to compute the square root, rounded down
  */
-
 function sqrt(value) {
-  !JSBI.greaterThanOrEqual(value, ZERO) ?  invariant(false, 'NEGATIVE')  : void 0; // rely on built in sqrt if possible
-
+  !JSBI.greaterThanOrEqual(value, ZERO) ?  invariant(false, 'NEGATIVE')  : void 0;
+  // rely on built in sqrt if possible
   if (JSBI.lessThan(value, MAX_SAFE_INTEGER)) {
     return JSBI.BigInt(Math.floor(Math.sqrt(JSBI.toNumber(value))));
   }
-
   var z;
   var x;
   z = value;
   x = JSBI.add(JSBI.divide(value, TWO), ONE);
-
   while (JSBI.lessThan(x, z)) {
     z = x;
     x = JSBI.divide(JSBI.add(JSBI.divide(value, x), x), TWO);
   }
-
   return z;
 }
 /**
@@ -1492,18 +1251,14 @@ function sqrt(value) {
  * @param values the values from which the smallest gets returned
  * @returns the smallest memmber of the array
  */
-
 function minimum() {
   var lowest = arguments.length <= 0 ? undefined : arguments[0];
-
   for (var i = 1; i < arguments.length; i++) {
     var value = i < 0 || arguments.length <= i ? undefined : arguments[i];
-
     if (JSBI.LT(value, lowest)) {
       lowest = value;
     }
   }
-
   return lowest;
 }
 /**
@@ -1511,25 +1266,20 @@ function minimum() {
  * @param values the values from which the biggest gets returned
  * @returns the biggest memmber of the array
  */
-
 function maximum() {
   var highest = arguments.length <= 0 ? undefined : arguments[0];
-
   for (var i = 1; i < arguments.length; i++) {
     var value = i < 0 || arguments.length <= i ? undefined : arguments[i];
-
     if (JSBI.GT(value, highest)) {
       highest = value;
     }
   }
-
   return highest;
 }
 function difference(a, b) {
   if (JSBI.greaterThan(a, b)) {
     return JSBI.subtract(a, b);
   }
-
   return JSBI.subtract(b, a);
 }
 
@@ -1540,7 +1290,6 @@ var Pair = /*#__PURE__*/function () {
     this.liquidityToken = new Token(currencyAmounts[0].currency.chainId, Pair.getAddress(currencyAmounts[0].currency, currencyAmounts[1].currency), 18, "UNI-V2", "Uniswap V2");
     this.tokenAmounts = currencyAmounts;
   }
-
   Pair.getAddress = function getAddress(tokenA, tokenB) {
     return computePairAddress({
       factoryAddress: FACTORY_ADDRESS[tokenA.chainId],
@@ -1551,19 +1300,14 @@ var Pair = /*#__PURE__*/function () {
   /**
    * Returns true if the token is either token0 or token1
    * @param token to check
-   */
-  ;
-
+   */;
   var _proto = Pair.prototype;
-
   _proto.involvesToken = function involvesToken(token) {
     return token.equals(this.token0) || token.equals(this.token1);
   }
   /**
    * Returns the current mid price of the pair in terms of token0, i.e. the ratio of reserve1 to reserve0
-   */
-  ;
-
+   */;
   /**
    * Return the price of the given token in terms of the other token in the pair.
    * @param token token to return price of
@@ -1574,42 +1318,32 @@ var Pair = /*#__PURE__*/function () {
   }
   /**
    * Returns the chain ID of the tokens in the pair.
-   */
-  ;
-
+   */;
   _proto.reserveOf = function reserveOf(token) {
     !this.involvesToken(token) ?  invariant(false, "TOKEN")  : void 0;
     return token.equals(this.token0) ? this.reserve0 : this.reserve1;
   };
-
   _proto.getOutputAmount = function getOutputAmount(inputAmount) {
     !this.involvesToken(inputAmount.currency) ?  invariant(false, "TOKEN")  : void 0;
-
     if (JSBI.equal(this.reserve0.quotient, ZERO) || JSBI.equal(this.reserve1.quotient, ZERO)) {
       throw new InsufficientReservesError();
     }
-
     var inputReserve = this.reserveOf(inputAmount.currency);
     var outputReserve = this.reserveOf(inputAmount.currency.equals(this.token0) ? this.token1 : this.token0);
     var inputAmountWithFee = JSBI.multiply(inputAmount.quotient, _997);
     var numerator = JSBI.multiply(inputAmountWithFee, outputReserve.quotient);
     var denominator = JSBI.add(JSBI.multiply(inputReserve.quotient, _1000), inputAmountWithFee);
     var outputAmount = CurrencyAmount.fromRawAmount(inputAmount.currency.equals(this.token0) ? this.token1 : this.token0, JSBI.divide(numerator, denominator));
-
     if (JSBI.equal(outputAmount.quotient, ZERO)) {
       throw new InsufficientInputAmountError();
     }
-
     return [outputAmount, new Pair(inputReserve.add(inputAmount), outputReserve.subtract(outputAmount))];
   };
-
   _proto.getInputAmount = function getInputAmount(outputAmount) {
     !this.involvesToken(outputAmount.currency) ?  invariant(false, "TOKEN")  : void 0;
-
     if (JSBI.equal(this.reserve0.quotient, ZERO) || JSBI.equal(this.reserve1.quotient, ZERO) || JSBI.greaterThanOrEqual(outputAmount.quotient, this.reserveOf(outputAmount.currency).quotient)) {
       throw new InsufficientReservesError();
     }
-
     var outputReserve = this.reserveOf(outputAmount.currency);
     var inputReserve = this.reserveOf(outputAmount.currency.equals(this.token0) ? this.token1 : this.token0);
     var numerator = JSBI.multiply(JSBI.multiply(inputReserve.quotient, outputAmount.quotient), _1000);
@@ -1617,14 +1351,12 @@ var Pair = /*#__PURE__*/function () {
     var inputAmount = CurrencyAmount.fromRawAmount(outputAmount.currency.equals(this.token0) ? this.token1 : this.token0, JSBI.add(JSBI.divide(numerator, denominator), ONE));
     return [inputAmount, new Pair(inputReserve.add(inputAmount), outputReserve.subtract(outputAmount))];
   };
-
   _proto.getLiquidityMinted = function getLiquidityMinted(totalSupply, tokenAmountA, tokenAmountB) {
     !totalSupply.currency.equals(this.liquidityToken) ?  invariant(false, "LIQUIDITY")  : void 0;
     var tokenAmounts = tokenAmountA.currency.sortsBefore(tokenAmountB.currency) // does safety checks
     ? [tokenAmountA, tokenAmountB] : [tokenAmountB, tokenAmountA];
     !(tokenAmounts[0].currency.equals(this.token0) && tokenAmounts[1].currency.equals(this.token1)) ?  invariant(false, "TOKEN")  : void 0;
     var liquidity;
-
     if (JSBI.equal(totalSupply.quotient, ZERO)) {
       liquidity = JSBI.subtract(sqrt(JSBI.multiply(tokenAmounts[0].quotient, tokenAmounts[1].quotient)), MINIMUM_LIQUIDITY);
     } else {
@@ -1639,35 +1371,28 @@ var Pair = /*#__PURE__*/function () {
         kLast: sqrt(JSBI.multiply(this.tokenAmounts[0].quotient, this.tokenAmounts[1].quotient))
       });
     }
-
     if (!JSBI.greaterThan(liquidity, ZERO)) {
       throw new InsufficientInputAmountError();
     }
-
     return CurrencyAmount.fromRawAmount(this.liquidityToken, liquidity);
   };
-
   _proto.getLiquidityValue = function getLiquidityValue(token, totalSupply, liquidity, feeOn, kLast) {
     if (feeOn === void 0) {
       feeOn = false;
     }
-
     !this.involvesToken(token) ?  invariant(false, "TOKEN")  : void 0;
     !totalSupply.currency.equals(this.liquidityToken) ?  invariant(false, "TOTAL_SUPPLY")  : void 0;
     !liquidity.currency.equals(this.liquidityToken) ?  invariant(false, "LIQUIDITY")  : void 0;
     !JSBI.lessThanOrEqual(liquidity.quotient, totalSupply.quotient) ?  invariant(false, "LIQUIDITY")  : void 0;
     var totalSupplyAdjusted;
-
     if (!feeOn) {
       totalSupplyAdjusted = totalSupply;
     } else {
       !!!kLast ?  invariant(false, "K_LAST")  : void 0;
       var kLastParsed = JSBI.BigInt(kLast);
-
       if (!JSBI.equal(kLastParsed, ZERO)) {
         var rootK = sqrt(JSBI.multiply(this.reserve0.quotient, this.reserve1.quotient));
         var rootKLast = sqrt(kLastParsed);
-
         if (JSBI.greaterThan(rootK, rootKLast)) {
           var numerator = JSBI.multiply(totalSupply.quotient, JSBI.subtract(rootK, rootKLast));
           var denominator = JSBI.add(JSBI.multiply(rootK, FIVE), rootKLast);
@@ -1680,10 +1405,8 @@ var Pair = /*#__PURE__*/function () {
         totalSupplyAdjusted = totalSupply;
       }
     }
-
     return CurrencyAmount.fromRawAmount(token, JSBI.divide(JSBI.multiply(liquidity.quotient, this.reserveOf(token).quotient), totalSupplyAdjusted.quotient));
   };
-
   _createClass(Pair, [{
     key: "token0Price",
     get: function get() {
@@ -1693,7 +1416,6 @@ var Pair = /*#__PURE__*/function () {
     /**
      * Returns the current mid price of the pair in terms of token1, i.e. the ratio of reserve0 to reserve1
      */
-
   }, {
     key: "token1Price",
     get: function get() {
@@ -1726,7 +1448,6 @@ var Pair = /*#__PURE__*/function () {
       return this.tokenAmounts[1];
     }
   }]);
-
   return Pair;
 }();
 
@@ -1735,60 +1456,45 @@ var ONE_HUNDRED = /*#__PURE__*/new Fraction( /*#__PURE__*/JSBI.BigInt(100));
  * Converts a fraction to a percent
  * @param fraction the fraction to convert
  */
-
 function toPercent(fraction) {
   return new Percent(fraction.numerator, fraction.denominator);
 }
-
 var Percent = /*#__PURE__*/function (_Fraction) {
   _inheritsLoose(Percent, _Fraction);
-
   function Percent() {
     var _this;
-
     _this = _Fraction.apply(this, arguments) || this;
     /**
      * This boolean prevents a fraction from being interpreted as a Percent
      */
-
     _this.isPercent = true;
     return _this;
   }
-
   var _proto = Percent.prototype;
-
   _proto.add = function add(other) {
     return toPercent(_Fraction.prototype.add.call(this, other));
   };
-
   _proto.subtract = function subtract(other) {
     return toPercent(_Fraction.prototype.subtract.call(this, other));
   };
-
   _proto.multiply = function multiply(other) {
     return toPercent(_Fraction.prototype.multiply.call(this, other));
   };
-
   _proto.divide = function divide(other) {
     return toPercent(_Fraction.prototype.divide.call(this, other));
   };
-
   _proto.toSignificant = function toSignificant(significantDigits, format, rounding) {
     if (significantDigits === void 0) {
       significantDigits = 5;
     }
-
     return _Fraction.prototype.multiply.call(this, ONE_HUNDRED).toSignificant(significantDigits, format, rounding);
   };
-
   _proto.toFixed = function toFixed(decimalPlaces, format, rounding) {
     if (decimalPlaces === void 0) {
       decimalPlaces = 2;
     }
-
     return _Fraction.prototype.multiply.call(this, ONE_HUNDRED).toFixed(decimalPlaces, format, rounding);
   };
-
   return Percent;
 }(Fraction);
 
@@ -1804,38 +1510,31 @@ var Route = /*#__PURE__*/function () {
     !pairs[0].involvesToken(wrappedInput) ?  invariant(false, 'INPUT')  : void 0;
     !(typeof output === 'undefined' || pairs[pairs.length - 1].involvesToken(output.wrapped)) ?  invariant(false, 'OUTPUT')  : void 0;
     var path = [wrappedInput];
-
     for (var _iterator = _createForOfIteratorHelperLoose(pairs.entries()), _step; !(_step = _iterator()).done;) {
       var _step$value = _step.value,
-          i = _step$value[0],
-          pair = _step$value[1];
+        i = _step$value[0],
+        pair = _step$value[1];
       var currentInput = path[i];
       !(currentInput.equals(pair.token0) || currentInput.equals(pair.token1)) ?  invariant(false, 'PATH')  : void 0;
-
       var _output = currentInput.equals(pair.token0) ? pair.token1 : pair.token0;
-
       path.push(_output);
     }
-
     this.pairs = pairs;
     this.path = path;
     this.input = input;
     this.output = output;
   }
-
   _createClass(Route, [{
     key: "midPrice",
     get: function get() {
       if (this._midPrice !== null) return this._midPrice;
       var prices = [];
-
       for (var _iterator2 = _createForOfIteratorHelperLoose(this.pairs.entries()), _step2; !(_step2 = _iterator2()).done;) {
         var _step2$value = _step2.value,
-            i = _step2$value[0],
-            pair = _step2$value[1];
+          i = _step2$value[0],
+          pair = _step2$value[1];
         prices.push(this.path[i].equals(pair.token0) ? new Price(pair.reserve0.currency, pair.reserve1.currency, pair.reserve0.quotient, pair.reserve1.quotient) : new Price(pair.reserve1.currency, pair.reserve0.currency, pair.reserve1.quotient, pair.reserve0.quotient));
       }
-
       var reduced = prices.slice(1).reduce(function (accumulator, currentValue) {
         return accumulator.multiply(currentValue);
       }, prices[0]);
@@ -1847,7 +1546,6 @@ var Route = /*#__PURE__*/function () {
       return this.pairs[0].chainId;
     }
   }]);
-
   return Route;
 }();
 
@@ -1857,62 +1555,55 @@ var Route = /*#__PURE__*/function () {
  * @param inputAmount the input amount of the trade
  * @param outputAmount the output amount of the trade
  */
-
 function computePriceImpact(midPrice, inputAmount, outputAmount) {
-  var quotedOutputAmount = midPrice.quote(inputAmount); // calculate price impact := (exactQuote - outputAmount) / exactQuote
-
+  var quotedOutputAmount = midPrice.quote(inputAmount);
+  // calculate price impact := (exactQuote - outputAmount) / exactQuote
   var priceImpact = quotedOutputAmount.subtract(outputAmount).divide(quotedOutputAmount);
   return new Percent(priceImpact.numerator, priceImpact.denominator);
 }
 
+// given an array of items sorted by `comparator`, insert an item into its sort index and constrain the size to
 // `maxSize` by removing the last item
-
 function sortedInsert(items, add, maxSize, comparator) {
-  !(maxSize > 0) ?  invariant(false, 'MAX_SIZE_ZERO')  : void 0; // this is an invariant because the interface cannot return multiple removed items if items.length exceeds maxSize
-
-  !(items.length <= maxSize) ?  invariant(false, 'ITEMS_SIZE')  : void 0; // short circuit first item add
-
+  !(maxSize > 0) ?  invariant(false, 'MAX_SIZE_ZERO')  : void 0;
+  // this is an invariant because the interface cannot return multiple removed items if items.length exceeds maxSize
+  !(items.length <= maxSize) ?  invariant(false, 'ITEMS_SIZE')  : void 0;
+  // short circuit first item add
   if (items.length === 0) {
     items.push(add);
     return null;
   } else {
-    var isFull = items.length === maxSize; // short circuit if full and the additional item does not come before the last item
-
+    var isFull = items.length === maxSize;
+    // short circuit if full and the additional item does not come before the last item
     if (isFull && comparator(items[items.length - 1], add) <= 0) {
       return add;
     }
-
     var lo = 0,
-        hi = items.length;
-
+      hi = items.length;
     while (lo < hi) {
       var mid = lo + hi >>> 1;
-
       if (comparator(items[mid], add) <= 0) {
         lo = mid + 1;
       } else {
         hi = mid;
       }
     }
-
     items.splice(lo, 0, add);
     return isFull ? items.pop() : null;
   }
 }
 
+// comparator function that allows sorting trades by their output amounts, in decreasing order, and then input amounts
 // in increasing order. i.e. the best trades have the most outputs for the least inputs and are sorted first
-
 function inputOutputComparator(a, b) {
   // must have same input and output token for comparison
   !a.inputAmount.currency.equals(b.inputAmount.currency) ?  invariant(false, 'INPUT_CURRENCY')  : void 0;
   !a.outputAmount.currency.equals(b.outputAmount.currency) ?  invariant(false, 'OUTPUT_CURRENCY')  : void 0;
-
   if (a.outputAmount.equalTo(b.outputAmount)) {
     if (a.inputAmount.equalTo(b.inputAmount)) {
       return 0;
-    } // trade A requires less input than trade B, so A should come first
-
-
+    }
+    // trade A requires less input than trade B, so A should come first
     if (a.inputAmount.lessThan(b.inputAmount)) {
       return -1;
     } else {
@@ -1926,68 +1617,54 @@ function inputOutputComparator(a, b) {
       return -1;
     }
   }
-} // extension of the input output comparator that also considers other dimensions of the trade in ranking them
-
+}
+// extension of the input output comparator that also considers other dimensions of the trade in ranking them
 function tradeComparator(a, b) {
   var ioComp = inputOutputComparator(a, b);
-
   if (ioComp !== 0) {
     return ioComp;
-  } // consider lowest slippage next, since these are less likely to fail
-
-
+  }
+  // consider lowest slippage next, since these are less likely to fail
   if (a.priceImpact.lessThan(b.priceImpact)) {
     return -1;
   } else if (a.priceImpact.greaterThan(b.priceImpact)) {
     return 1;
-  } // finally consider the number of hops since each hop costs gas
-
-
+  }
+  // finally consider the number of hops since each hop costs gas
   return a.route.path.length - b.route.path.length;
 }
 /**
  * Represents a trade executed against a list of pairs.
  * Does not account for slippage, i.e. trades that front run this trade and move the price.
  */
-
 var Trade = /*#__PURE__*/function () {
   function Trade(route, amount, tradeType) {
     this.route = route;
     this.tradeType = tradeType;
     var tokenAmounts = new Array(route.path.length);
-
     if (tradeType === exports.TradeType.EXACT_INPUT) {
       !amount.currency.equals(route.input) ?  invariant(false, 'INPUT')  : void 0;
       tokenAmounts[0] = amount.wrapped;
-
       for (var i = 0; i < route.path.length - 1; i++) {
         var pair = route.pairs[i];
-
         var _pair$getOutputAmount = pair.getOutputAmount(tokenAmounts[i]),
-            outputAmount = _pair$getOutputAmount[0];
-
+          outputAmount = _pair$getOutputAmount[0];
         tokenAmounts[i + 1] = outputAmount;
       }
-
       this.inputAmount = CurrencyAmount.fromFractionalAmount(route.input, amount.numerator, amount.denominator);
       this.outputAmount = CurrencyAmount.fromFractionalAmount(route.output, tokenAmounts[tokenAmounts.length - 1].numerator, tokenAmounts[tokenAmounts.length - 1].denominator);
     } else {
       !amount.currency.equals(route.output) ?  invariant(false, 'OUTPUT')  : void 0;
       tokenAmounts[tokenAmounts.length - 1] = amount.wrapped;
-
       for (var _i = route.path.length - 1; _i > 0; _i--) {
         var _pair = route.pairs[_i - 1];
-
         var _pair$getInputAmount = _pair.getInputAmount(tokenAmounts[_i]),
-            inputAmount = _pair$getInputAmount[0];
-
+          inputAmount = _pair$getInputAmount[0];
         tokenAmounts[_i - 1] = inputAmount;
       }
-
       this.inputAmount = CurrencyAmount.fromFractionalAmount(route.input, tokenAmounts[0].numerator, tokenAmounts[0].denominator);
       this.outputAmount = CurrencyAmount.fromFractionalAmount(route.output, amount.numerator, amount.denominator);
     }
-
     this.executionPrice = new Price(this.inputAmount.currency, this.outputAmount.currency, this.inputAmount.quotient, this.outputAmount.quotient);
     this.priceImpact = computePriceImpact(route.midPrice, this.inputAmount, this.outputAmount);
   }
@@ -1996,8 +1673,6 @@ var Trade = /*#__PURE__*/function () {
    * @param route route of the exact in trade
    * @param amountIn the amount being passed in
    */
-
-
   Trade.exactIn = function exactIn(route, amountIn) {
     return new Trade(route, amountIn, exports.TradeType.EXACT_INPUT);
   }
@@ -2005,23 +1680,17 @@ var Trade = /*#__PURE__*/function () {
    * Constructs an exact out trade with the given amount out and route
    * @param route route of the exact out trade
    * @param amountOut the amount returned by the trade
-   */
-  ;
-
+   */;
   Trade.exactOut = function exactOut(route, amountOut) {
     return new Trade(route, amountOut, exports.TradeType.EXACT_OUTPUT);
   }
   /**
    * Get the minimum amount that must be received from this trade for the given slippage tolerance
    * @param slippageTolerance tolerance of unfavorable slippage from the execution price of this trade
-   */
-  ;
-
+   */;
   var _proto = Trade.prototype;
-
   _proto.minimumAmountOut = function minimumAmountOut(slippageTolerance) {
     !!slippageTolerance.lessThan(ZERO) ?  invariant(false, 'SLIPPAGE_TOLERANCE')  : void 0;
-
     if (this.tradeType === exports.TradeType.EXACT_OUTPUT) {
       return this.outputAmount;
     } else {
@@ -2032,12 +1701,9 @@ var Trade = /*#__PURE__*/function () {
   /**
    * Get the maximum amount in that can be spent via this trade for the given slippage tolerance
    * @param slippageTolerance tolerance of unfavorable slippage from the execution price of this trade
-   */
-  ;
-
+   */;
   _proto.maximumAmountIn = function maximumAmountIn(slippageTolerance) {
     !!slippageTolerance.lessThan(ZERO) ?  invariant(false, 'SLIPPAGE_TOLERANCE')  : void 0;
-
     if (this.tradeType === exports.TradeType.EXACT_INPUT) {
       return this.inputAmount;
     } else {
@@ -2058,78 +1724,64 @@ var Trade = /*#__PURE__*/function () {
    * @param currentPairs used in recursion; the current list of pairs
    * @param currencyAmountIn used in recursion; the original value of the currencyAmountIn parameter
    * @param bestTrades used in recursion; the current list of best trades
-   */
-  ;
-
-  Trade.bestTradeExactIn = function bestTradeExactIn(pairs, currencyAmountIn, currencyOut, _temp, // used in recursion.
+   */;
+  Trade.bestTradeExactIn = function bestTradeExactIn(pairs, currencyAmountIn, currencyOut, _temp,
+  // used in recursion.
   currentPairs, nextAmountIn, bestTrades) {
     var _ref = _temp === void 0 ? {} : _temp,
-        _ref$maxNumResults = _ref.maxNumResults,
-        maxNumResults = _ref$maxNumResults === void 0 ? 3 : _ref$maxNumResults,
-        _ref$maxHops = _ref.maxHops,
-        maxHops = _ref$maxHops === void 0 ? 3 : _ref$maxHops;
-
+      _ref$maxNumResults = _ref.maxNumResults,
+      maxNumResults = _ref$maxNumResults === void 0 ? 3 : _ref$maxNumResults,
+      _ref$maxHops = _ref.maxHops,
+      maxHops = _ref$maxHops === void 0 ? 3 : _ref$maxHops;
     if (currentPairs === void 0) {
       currentPairs = [];
     }
-
     if (nextAmountIn === void 0) {
       nextAmountIn = currencyAmountIn;
     }
-
     if (bestTrades === void 0) {
       bestTrades = [];
     }
-
     !(pairs.length > 0) ?  invariant(false, 'PAIRS')  : void 0;
     !(maxHops > 0) ?  invariant(false, 'MAX_HOPS')  : void 0;
     !(currencyAmountIn === nextAmountIn || currentPairs.length > 0) ?  invariant(false, 'INVALID_RECURSION')  : void 0;
     var amountIn = nextAmountIn.wrapped;
     var tokenOut = currencyOut.wrapped;
-
     for (var i = 0; i < pairs.length; i++) {
-      var pair = pairs[i]; // pair irrelevant
-
+      var pair = pairs[i];
+      // pair irrelevant
       if (!pair.token0.equals(amountIn.currency) && !pair.token1.equals(amountIn.currency)) continue;
       if (pair.reserve0.equalTo(ZERO) || pair.reserve1.equalTo(ZERO)) continue;
       var amountOut = void 0;
-
       try {
         ;
-
         var _pair$getOutputAmount2 = pair.getOutputAmount(amountIn);
-
         amountOut = _pair$getOutputAmount2[0];
       } catch (error) {
         // input too low
         if (error.isInsufficientInputAmountError) {
           continue;
         }
-
         throw error;
-      } // we have arrived at the output token, so this is the final trade of one of the paths
-
-
+      }
+      // we have arrived at the output token, so this is the final trade of one of the paths
       if (amountOut.currency.equals(tokenOut)) {
         sortedInsert(bestTrades, new Trade(new Route([].concat(currentPairs, [pair]), currencyAmountIn.currency, currencyOut), currencyAmountIn, exports.TradeType.EXACT_INPUT), maxNumResults, tradeComparator);
       } else if (maxHops > 1 && pairs.length > 1) {
-        var pairsExcludingThisPair = pairs.slice(0, i).concat(pairs.slice(i + 1, pairs.length)); // otherwise, consider all the other paths that lead from this token as long as we have not exceeded maxHops
-
+        var pairsExcludingThisPair = pairs.slice(0, i).concat(pairs.slice(i + 1, pairs.length));
+        // otherwise, consider all the other paths that lead from this token as long as we have not exceeded maxHops
         Trade.bestTradeExactIn(pairsExcludingThisPair, currencyAmountIn, currencyOut, {
           maxNumResults: maxNumResults,
           maxHops: maxHops - 1
         }, [].concat(currentPairs, [pair]), amountOut, bestTrades);
       }
     }
-
     return bestTrades;
   }
   /**
    * Return the execution price after accounting for slippage tolerance
    * @param slippageTolerance the allowed tolerated slippage
-   */
-  ;
-
+   */;
   _proto.worstExecutionPrice = function worstExecutionPrice(slippageTolerance) {
     return new Price(this.inputAmount.currency, this.outputAmount.currency, this.maximumAmountIn(slippageTolerance).quotient, this.minimumAmountOut(slippageTolerance).quotient);
   }
@@ -2147,81 +1799,68 @@ var Trade = /*#__PURE__*/function () {
    * @param currentPairs used in recursion; the current list of pairs
    * @param currencyAmountOut used in recursion; the original value of the currencyAmountOut parameter
    * @param bestTrades used in recursion; the current list of best trades
-   */
-  ;
-
-  Trade.bestTradeExactOut = function bestTradeExactOut(pairs, currencyIn, currencyAmountOut, _temp2, // used in recursion.
+   */;
+  Trade.bestTradeExactOut = function bestTradeExactOut(pairs, currencyIn, currencyAmountOut, _temp2,
+  // used in recursion.
   currentPairs, nextAmountOut, bestTrades) {
     var _ref2 = _temp2 === void 0 ? {} : _temp2,
-        _ref2$maxNumResults = _ref2.maxNumResults,
-        maxNumResults = _ref2$maxNumResults === void 0 ? 3 : _ref2$maxNumResults,
-        _ref2$maxHops = _ref2.maxHops,
-        maxHops = _ref2$maxHops === void 0 ? 3 : _ref2$maxHops;
-
+      _ref2$maxNumResults = _ref2.maxNumResults,
+      maxNumResults = _ref2$maxNumResults === void 0 ? 3 : _ref2$maxNumResults,
+      _ref2$maxHops = _ref2.maxHops,
+      maxHops = _ref2$maxHops === void 0 ? 3 : _ref2$maxHops;
     if (currentPairs === void 0) {
       currentPairs = [];
     }
-
     if (nextAmountOut === void 0) {
       nextAmountOut = currencyAmountOut;
     }
-
     if (bestTrades === void 0) {
       bestTrades = [];
     }
-
     !(pairs.length > 0) ?  invariant(false, 'PAIRS')  : void 0;
     !(maxHops > 0) ?  invariant(false, 'MAX_HOPS')  : void 0;
     !(currencyAmountOut === nextAmountOut || currentPairs.length > 0) ?  invariant(false, 'INVALID_RECURSION')  : void 0;
     var amountOut = nextAmountOut.wrapped;
     var tokenIn = currencyIn.wrapped;
-
     for (var i = 0; i < pairs.length; i++) {
-      var pair = pairs[i]; // pair irrelevant
-
+      var pair = pairs[i];
+      // pair irrelevant
       if (!pair.token0.equals(amountOut.currency) && !pair.token1.equals(amountOut.currency)) continue;
       if (pair.reserve0.equalTo(ZERO) || pair.reserve1.equalTo(ZERO)) continue;
       var amountIn = void 0;
-
       try {
         ;
-
         var _pair$getInputAmount2 = pair.getInputAmount(amountOut);
-
         amountIn = _pair$getInputAmount2[0];
       } catch (error) {
         // not enough liquidity in this pair
         if (error.isInsufficientReservesError) {
           continue;
         }
-
         throw error;
-      } // we have arrived at the input token, so this is the first trade of one of the paths
-
-
+      }
+      // we have arrived at the input token, so this is the first trade of one of the paths
       if (amountIn.currency.equals(tokenIn)) {
         sortedInsert(bestTrades, new Trade(new Route([pair].concat(currentPairs), currencyIn, currencyAmountOut.currency), currencyAmountOut, exports.TradeType.EXACT_OUTPUT), maxNumResults, tradeComparator);
       } else if (maxHops > 1 && pairs.length > 1) {
-        var pairsExcludingThisPair = pairs.slice(0, i).concat(pairs.slice(i + 1, pairs.length)); // otherwise, consider all the other paths that arrive at this token as long as we have not exceeded maxHops
-
+        var pairsExcludingThisPair = pairs.slice(0, i).concat(pairs.slice(i + 1, pairs.length));
+        // otherwise, consider all the other paths that arrive at this token as long as we have not exceeded maxHops
         Trade.bestTradeExactOut(pairsExcludingThisPair, currencyIn, currencyAmountOut, {
           maxNumResults: maxNumResults,
           maxHops: maxHops - 1
         }, [pair].concat(currentPairs), amountIn, bestTrades);
       }
     }
-
     return bestTrades;
   };
-
   return Trade;
 }();
 
 // account is not optional
 function getSigner(library, account) {
   return library.getSigner(account).connectUnchecked();
-} // account is optional
-
+}
+// account is optional
 function getProviderOrSigner(library, account) {
   return account ? getSigner(library, account) : library;
 }
@@ -2231,17 +1870,14 @@ function rebase(value, from, to) {
 }
 function toElastic(total, base, roundUp) {
   var elastic;
-
   if (JSBI.equal(total.base, ZERO)) {
     elastic = base;
   } else {
     elastic = JSBI.divide(JSBI.multiply(base, total.elastic), total.base);
-
     if (roundUp && JSBI.lessThan(JSBI.divide(JSBI.multiply(elastic, total.base), total.elastic), base)) {
       elastic = JSBI.add(elastic, ONE);
     }
   }
-
   return elastic;
 }
 
@@ -2257,7 +1893,6 @@ var ZERO_HEX = '0x0';
 /**
  * Represents the Uniswap V2 Router, and has static methods for helping execute trades.
  */
-
 var Router = /*#__PURE__*/function () {
   /**
    * Cannot be constructed.
@@ -2268,12 +1903,10 @@ var Router = /*#__PURE__*/function () {
    * @param trade to produce call parameters for
    * @param options options for the call parameters
    */
-
-
   Router.swapCallParameters = function swapCallParameters(trade, options) {
     var etherIn = trade.inputAmount.currency.isNative;
-    var etherOut = trade.outputAmount.currency.isNative; // the router does not support both ether in and out
-
+    var etherOut = trade.outputAmount.currency.isNative;
+    // the router does not support both ether in and out
     !!(etherIn && etherOut) ?  invariant(false, 'ETHER_IN_OUT')  : void 0;
     !(!('ttl' in options) || options.ttl > 0) ?  invariant(false, 'TTL')  : void 0;
     var to = validateAndParseAddress(options.recipient);
@@ -2287,58 +1920,51 @@ var Router = /*#__PURE__*/function () {
     var methodName;
     var args;
     var value;
-
     switch (trade.tradeType) {
       case exports.TradeType.EXACT_INPUT:
         if (etherIn) {
-          methodName = useFeeOnTransfer ? 'swapExactETHForTokensSupportingFeeOnTransferTokens' : 'swapExactETHForTokens'; // (uint amountOutMin, address[] calldata path, address to, uint deadline)
-
+          methodName = useFeeOnTransfer ? 'swapExactETHForTokensSupportingFeeOnTransferTokens' : 'swapExactETHForTokens';
+          // (uint amountOutMin, address[] calldata path, address to, uint deadline)
           args = [amountOut, path, to, deadline];
           value = amountIn;
         } else if (etherOut) {
-          methodName = useFeeOnTransfer ? 'swapExactTokensForETHSupportingFeeOnTransferTokens' : 'swapExactTokensForETH'; // (uint amountIn, uint amountOutMin, address[] calldata path, address to, uint deadline)
-
+          methodName = useFeeOnTransfer ? 'swapExactTokensForETHSupportingFeeOnTransferTokens' : 'swapExactTokensForETH';
+          // (uint amountIn, uint amountOutMin, address[] calldata path, address to, uint deadline)
           args = [amountIn, amountOut, path, to, deadline];
           value = ZERO_HEX;
         } else {
-          methodName = useFeeOnTransfer ? 'swapExactTokensForTokensSupportingFeeOnTransferTokens' : 'swapExactTokensForTokens'; // (uint amountIn, uint amountOutMin, address[] calldata path, address to, uint deadline)
-
+          methodName = useFeeOnTransfer ? 'swapExactTokensForTokensSupportingFeeOnTransferTokens' : 'swapExactTokensForTokens';
+          // (uint amountIn, uint amountOutMin, address[] calldata path, address to, uint deadline)
           args = [amountIn, amountOut, path, to, deadline];
           value = ZERO_HEX;
         }
-
         break;
-
       case exports.TradeType.EXACT_OUTPUT:
         !!useFeeOnTransfer ?  invariant(false, 'EXACT_OUT_FOT')  : void 0;
-
         if (etherIn) {
-          methodName = 'swapETHForExactTokens'; // (uint amountOut, address[] calldata path, address to, uint deadline)
-
+          methodName = 'swapETHForExactTokens';
+          // (uint amountOut, address[] calldata path, address to, uint deadline)
           args = [amountOut, path, to, deadline];
           value = amountIn;
         } else if (etherOut) {
-          methodName = 'swapTokensForExactETH'; // (uint amountOut, uint amountInMax, address[] calldata path, address to, uint deadline)
-
+          methodName = 'swapTokensForExactETH';
+          // (uint amountOut, uint amountInMax, address[] calldata path, address to, uint deadline)
           args = [amountOut, amountIn, path, to, deadline];
           value = ZERO_HEX;
         } else {
-          methodName = 'swapTokensForExactTokens'; // (uint amountOut, uint amountInMax, address[] calldata path, address to, uint deadline)
-
+          methodName = 'swapTokensForExactTokens';
+          // (uint amountOut, uint amountInMax, address[] calldata path, address to, uint deadline)
           args = [amountOut, amountIn, path, to, deadline];
           value = ZERO_HEX;
         }
-
         break;
     }
-
     return {
       methodName: methodName,
       args: args,
       value: value
     };
   };
-
   return Router;
 }();
 
