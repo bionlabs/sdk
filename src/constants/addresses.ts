@@ -55,7 +55,7 @@ export const USDC_ADDRESS: AddressMap = {
 
 export const BUSD_ADDRESS: AddressMap = {
   [ChainId.BSC]: '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
-  [ChainId.BSC_TESTNET]: '0x8301F2213c0eeD49a7E28Ae4c3e91722919B8B47',
+  [ChainId.BSC_TESTNET]: '0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee',
 };
 
 // export const USD_ADDRESS: AddressMap = {
